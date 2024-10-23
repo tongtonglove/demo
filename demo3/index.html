@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>音乐播放器</title>
+		<style>
+			html,
+			body {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-image: linear-gradient(to top,#fff1eb 0%,#ace0f9 100%);
+				display: flex;
+				align-items: center;/* 垂直居中 */
+				justify-content: center;/* 水平居中 */
+			}
+			#myAudio
+			{
+				display: none;
+			}
+			.player
+			{
+				position: relative;
+			}
+			.control
+			{
+				width: 300px;
+				height: 80px;
+				background: #fff;
+				border-radius: 15px;
+				position: relative;
+				box-shadow: 0 20px 20px 5px rgba(132, 132, 132, 0.2);
+			}
+			.album
+			{
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				position: absolute;
+				top: -15px;
+				left: 20px;
+				background: #000;
+				transform: scale(1);
+				transition: all 0.5s ease;
+			}
+			.album::before
+			{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				bottom: 0;
+				border-radius: 50%;
+				background: url("img/pic.webp");/* url */
+				background-size: 100%;
+			}
+			.album::after
+			{
+				content: '';
+				width: 15px;
+				height: 15px;
+				background: #fff;
+				border-radius: 50%;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+			}
+			.buts
+			{
+				display: flex;
+				justify-content: flex-end;
+				height: 80px;
+				padding: 0 15px;
+			}
+			.prev,.play,.next
+			{
+				width: 55px;
+				height: auto;
+				border-radius: 10px;
+				background: #000;
+				cursor: pointer;
+			}
+			.prev:hover,.play:hover,.next:hover
+			{
+				background: #fff;
+			}
+			.prev
+			{
+				background: url();
+				background-size: 20px;
+			}
+			.play
+			{
+				background: url();
+				background-size: 20px;
+			}
+			.next
+			{
+				background: url();
+				background-size: 20px;
+			}
+			/* 播放时 */
+			.control.active .play
+			{
+				background-image: url("");/* url */
+				background-size: 20px;
+			}
+			/* 音响 */
+			.control.active .album::before
+			{
+				animation: rotateF 3s infinite linear;
+			}
+			@keyframes rotateF
+			{
+				0%{
+					transform: rotate(0deg);
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+			/* 隐藏 */
+			.info
+			{
+				opacity: 0;
+				position: absolute;
+				height: 60px;
+				top: -60px;
+				left: 10px;
+				right: 10px;
+				background: rgba(255, 255, 255, 0.5);
+				padding: 5px 15px 5px 110px;
+				border-radius: 15px;
+			}
+			.info.active
+			{
+				opacity: 1;
+			}
+			.song
+			{
+				color: #222;
+				font-size: 16px;
+				margin-bottom: 5px;
+			}
+			.name
+			{
+				font-size: 12px;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 播放器 -->
+		<audio id="myAudio">
+			<source src="">
+		</audio>
+		<div class="player">
+			<!-- 播放信息 -->
+			<div class="info active" id="info">
+				<div class="song">我们都一样</div>
+				<div class="name">张杰</div>
+			</div>
+			<!-- 播放信息 end -->
+			<!-- 控件 -->
+			<div class="control active" id="control">
+				<div class="album"></div>
+				<div class="buts">
+					<div class="prev"></div>
+					<div class="play"></div>
+					<div class="next"></div>
+				</div>
+			</div>
+			<!-- 控件 end -->
+		</div>
+	</body>
+</html>
