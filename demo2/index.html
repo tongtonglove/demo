@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝美小卡-源代码山羊</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        body {
+            min-block-size: 100%;
+            display: grid;
+            place-content: center;
+            /* 设置上下内边距为 30% 视口高度 */
+            padding-block: 30dvh;
+            background: #f7d6ff;
+        }
+
+        @keyframes slide-fade-in {
+            from {
+                opacity: 0;
+                box-shadow: none;
+                transform: scale(.8) translateY(15vh);
+            }
+        }
+
+        .cards {
+            display: grid;
+            gap: 2rem;
+            /* 自动排列 */
+            grid-auto-flow: dense;
+            grid-template-columns: repeat(4, 30ch);
+        }
+
+        .card {
+            animation: slide-fade-in both;
+            /* 使用浏览器的视图时间线,允许动画根据视口的变化进行同步 */
+            animation-timeline: view();
+            /* 定义动画时间范围 */
+            animation-range: contain 0% contain 50%;
+            border-radius: 10px;
+            line-height: 6;
+            box-shadow: 0px 8px 20px #00000022;
+            font-size: 32px;
+            letter-spacing: 5px;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-image: linear-gradient(to bottom right,
+                    #91defe,
+                    #99c0f9,
+                    #bdb6ec,
+                    #d7b3e3,
+                    #efb3d5,
+                    #f9bccc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card:nth-of-type(4n) {
+            grid-column: span 2;
+        }
+
+        .card:nth-of-type(5n) {
+            grid-column: span 2;
+        }
+
+        .card:nth-of-type(7n) {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card">人生万岁</div>
+        <div class="card">闪亮的西瓜</div>
+        <div class="card">Viva la vida</div>
+        <div class="card"> <img src="img/35addf8acd04d6638583c18f6d9f983.jpg"></div>
+        <div class="card"> <img src="https://s21.ax1x.com/2024/10/19/pAaFiz4.jpg"></div>
+        <div class="card"> <img src="img/c5bb1e2d261ad0c8eab4a51e9110c8b.jpg"></div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card"> <img src="https://s21.ax1x.com/2024/10/19/pAaFPWF.jpg"></div>
+        <div class="card"> <img src="https://s21.ax1x.com/2024/10/19/pAUvzOf.jpg"></div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card"> <img src="https://s21.ax1x.com/2024/10/19/pAaFCJU.jpg"></div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card"> <img src="https://s21.ax1x.com/2024/10/19/pAaFSoV.jpg"></div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+        <div class="card"> <img src="https://s21.ax1x.com/2024/10/19/pAaFkQJ.jpg"></div>
+        <div class="card"> <img src="https://s21.ax1x.com/2024/10/19/pAaizd0.jpg"></div>
+        <div class="card">TEXT</div>
+        <div class="card">TEXT</div>
+		<div class="card"><iframe style="width: 100%;height: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=1350145207&bvid=BV1UB42167A4&cid=1424157416&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
+        <div class="card">情书</div>
+        <div class="card">藤井树</div>
+        <div class="card"><iframe style="width: 100%;height: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=883197326&bvid=BV1MK4y1t7dc&cid=282053256&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
+    </div>
+</body>
