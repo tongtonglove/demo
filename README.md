@@ -13,3 +13,5 @@ https://tongtonglove.github.io/demo/demo4/index.html 流光效果按钮
 https://tongtonglove.github.io/demo/demo5/index.html 发光按钮
 
 https://tongtonglove.github.io/demo/demo6/index.html 可编辑文本霓虹灯闪烁效果
+
+https://tongtonglove.github.io/demo/demo7/index.html 导航菜单
