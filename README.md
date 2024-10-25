@@ -19,3 +19,5 @@ https://tongtonglove.github.io/demo/demo7/index.html 导航菜单
 https://tongtonglove.github.io/demo/demo8/index.html 响应式导航栏
 
 https://tongtonglove.github.io/demo/demo9/index.html 磨砂玻璃动画登录
+
+https://tongtonglove.github.io/demo/demo10/index.html 浅/深色主题切换
