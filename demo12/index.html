@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width",
+		initial-scale=1.0 /><!-- 屏幕自适应 -->
+		<title>桐の个人主页</title>
+		<link 
+			rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+			crossorigin="anonymous" 
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="navbar">
+				<div class="logo"><a href="#">STAR</a></div>
+				<ul class="links">
+					<li><a href="">首页</a></li>
+					<li><a href="about/index.html">关于</a></li>
+					<li><a href="talk/index.html">说说</a></li>
+					<li><a href="mailto:3263302669@qq.com">联系</a></li>
+				</ul>
+				<a href="https://tongtonglove.github.io/" class="action_btn">Get Started</a>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+			
+			<div class="dropdown_menu">
+				<li><a href="">首页</a></li>
+				<li><a href="about/index.html">关于</a></li>
+				<li><a href="talk/index.html">说说</a></li>
+				<li><a href="mailto:3263302669@qq.com">联系</a></li>
+				<li><a href="https://tongtonglove.github.io/" class="action_btn">Get Started</a></li>
+			</div>
+		</header>
+		
+		<main>
+			<section id="hero">
+				<h1>HELLO</h1>
+				<p>
+					盛夏日记 <br/>
+					我的心动降临在夏天
+				</p>
+			</section>
+		</main>
+		
+		<script>
+			const toggleBtn = document.querySelector('.toggle_btn')
+			const toggleBtnIcon = document.querySelector('.toggle_btn i')
+			const dropDownMenu = document.querySelector('.dropdown_menu')
+			
+			toggleBtn.onclick = function(){
+				dropDownMenu.classList.toggle('open')
+				const isOpen = dropDownMenu.classList.contains('open')
+				
+				toggleBtnIcon.classList=isOpen
+				? 'fa-solid fa-xmark'
+				: 'fa-solid fa-bars'
+			}
+		</script>
+	</body>
+</html>

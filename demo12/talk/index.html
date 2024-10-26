@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width",
+		initial-scale=1.0 /><!-- 屏幕自适应 -->
+		<title>桐の个人主页</title>
+		<link 
+			rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+			crossorigin="anonymous" 
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="navbar">
+				<div class="logo"><a href="#">STAR</a></div>
+				<ul class="links">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="../about/index.html">关于</a></li>
+					<li><a href="../talk/index.html">说说</a></li>
+					<li><a href="mailto:3263302669@qq.com">联系</a></li>
+				</ul>
+				<a href="https://tongtonglove.github.io/" class="action_btn">Get Started</a>
+				<div class="toggle_btn">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+			
+			<div class="dropdown_menu">
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="../about/index.html">关于</a></li>
+				<li><a href="../talk/index.html">说说</a></li>
+				<li><a href="mailto:3263302669@qq.com">联系</a></li>
+				<li><a href="https://tongtonglove.github.io/" class="action_btn">Get Started</a></li>
+			</div>
+		</header>
+		
+		<main>
+			<section id="talk">
+				<div>
+					快乐法则：减少期待 戒掉敏感
+				</div>
+				<div>
+					我慢慢自愈了，我要变好了，我开始追求有结果的人和事了，总有人翻山越岭为我而来，我会长大的，我的爱也是。
+				</div>
+				<div>
+					真的没关系，大家都会爱错人，会莫名其妙掉眼泪，走在路上突然会崩溃，但这并不妨碍我们去看晚霞，吹吹风，都会过去的。
+				</div>
+				<div>
+					若你决定灿烂，山无遮，海无拦。
+				</div>
+				<div>
+					勇敢的人，不是不落泪的人，而是愿意含着泪继续奔跑的人。
+				</div>
+				<div>
+					握不住的沙，不如扬了它。
+				</div>
+				<div>
+					“ 庆幸的是，我一直很理性地去看待所有的事情。但可悲的是，我是一个很感性的人，该有的情绪我一样都没有错过。”
+				</div>
+				<div>
+					人世间的事情莫过于此，用一个瞬间来喜欢一样东西，然后用多年的时间来慢慢拷问自己为什么会喜欢这样东西。
+				</div>
+				<footer>
+					
+				</footer>
+			</section>
+		</main>
+		
+		<script>
+			const toggleBtn = document.querySelector('.toggle_btn')
+			const toggleBtnIcon = document.querySelector('.toggle_btn i')
+			const dropDownMenu = document.querySelector('.dropdown_menu')
+			
+			toggleBtn.onclick = function(){
+				dropDownMenu.classList.toggle('open')
+				const isOpen = dropDownMenu.classList.contains('open')
+				
+				toggleBtnIcon.classList=isOpen
+				? 'fa-solid fa-xmark'
+				: 'fa-solid fa-bars'
+			}
+		</script>
+	</body>
+</html>
