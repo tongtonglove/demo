@@ -171,6 +171,7 @@ section#talk{
 	text-align: center;
 	color: #fff;
 	position: relative;
+	z-index: -1;
 }
 #talk div{
 	padding: 15px;
@@ -179,8 +180,6 @@ section#talk{
 	border-radius: 10px;
 	/* 盒子大小与文字等宽 */
 	display:inline-block;
-	position: relative;
-	z-index: -1;
 }
 .footer{
 	height: 60px;
