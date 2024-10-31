@@ -24,6 +24,6 @@ https://tongtonglove.github.io/demo/demo10/index.html 浅/深色主题切换
 
 https://tongtonglove.github.io/demo/demo11/index.html 阿狸主题个人主页首页
 
-https://tongtonglove.github.io/demo/demo12/index.html 个人主页
+https://tongtonglove.github.io/demo/demo12/index.html 桐の个人主页
 
 https://tongtonglove.github.io/demo/demo13/index.html 轮播图片
