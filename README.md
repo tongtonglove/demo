@@ -27,5 +27,3 @@ https://tongtonglove.github.io/demo/demo11/index.html 阿狸主题个人主页
 https://tongtonglove.github.io/demo/demo12/index.html 个人主页
 
 https://tongtonglove.github.io/demo/demo13/index.html 轮播图片
-
-https://tongtonglove.github.io/demo/demo14/index.html 个人主页+小向晚看板
