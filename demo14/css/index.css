@@ -1,0 +1,39 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#cebianlan{
+	background-color: pink;
+	width: 12%;
+	height: 100vh;
+}
+#shuqian1,#shuqian2,#shuqian3,#shuqian4{
+	padding: 15px 15px 15px 15px;
+	text-align: center;
+	color: #fff;
+}
+#shuqian1:hover{
+	background-color: #fff;
+	padding: 15px;
+	text-align: center;
+	color: pink;
+}
+#shuqian2:hover{
+	background-color: #fff;
+	padding: 15px;
+	text-align: center;
+	color: pink;
+}
+#shuqian3:hover{
+	background-color: #fff;
+	padding: 15px;
+	text-align: center;
+	color: pink;
+}
+#shuqian4:hover{
+	background-color: #fff;
+	padding: 15px;
+	text-align: center;
+	color: pink;
+}
