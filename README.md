@@ -35,3 +35,5 @@ https://tongtonglove.github.io/demo/demo15/index.html 大红灯笼高高挂
 https://tongtonglove.github.io/demo/demo16/index.html 大红灯笼高高挂
 
 https://tongtonglove.github.io/demo/demo19/index.html 2d角色移动
+
+https://tongtonglove.github.io/demo/demo20/index.html 2d角色移动+静态地图
