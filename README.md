@@ -33,3 +33,5 @@ https://tongtonglove.github.io/demo/demo14/index.html 书签式导航栏
 https://tongtonglove.github.io/demo/demo15/index.html 大红灯笼高高挂
 
 https://tongtonglove.github.io/demo/demo16/index.html 大红灯笼高高挂
+
+https://tongtonglove.github.io/demo/demo19/index.html 2d角色移动
