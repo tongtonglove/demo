@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungojum玩家的生活日志</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="hello.js"></script>
+	<link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <header>
+        <img src="https://ts4.tc.mm.bing.net/th/id/OIP-C.AFiB9e8wjxuQ0KDMbtPfwAHaHa?w=200" alt="玩家头像" class="avatar">
+        <h1>超级小星</h1>
+        <div class="subtitle">Jungojum ID: 星小栀</div>
+    </header>
+
+    <section class="section">
+        <h2>🏝️ 个人简介</h2>
+        <div id="profile-md" class="md-content">
+            <p>加载中...</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>📜 动态日志</h2>
+        <div id="posts-md" class="md-content">
+            <p>加载中...</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; margin-top: 50px; color: #666;">
+        © 2025 Jungojum日志 - 用❤️记录生活
+    </footer>
+	
+    <script>
+        // 加载Markdown内容
+        async function loadMarkdownContent() {
+            try {
+                // 加载个人简介
+                const profileResponse = await fetch('profile.md');
+                const profileMD = await profileResponse.text();
+                document.getElementById('profile-md').innerHTML = marked.parse(profileMD);
+                
+                // 加载动态日志
+                const postsResponse = await fetch('posts.md');
+                const postsMD = await postsResponse.text();
+                document.getElementById('posts-md').innerHTML = marked.parse(postsMD);
+            } catch (error) {
+                console.error('加载失败:', error);
+                document.getElementById('profile-md').innerHTML = 
+                    '<p>无法加载内容，请刷新重试</p>';
+                document.getElementById('posts-md').innerHTML = 
+                    '<p>无法加载内容，请刷新重试</p>';
+            }
+        }
+
+        // 页面加载完成后执行
+        window.addEventListener('DOMContentLoaded', loadMarkdownContent);
+    </script>
+</body>
+</html>
